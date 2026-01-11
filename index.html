@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Платформа МГИК — Каталог проектов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header>
+    <nav>
+        <a href="index.html">Проекты</a>
+        <a href="archive.html">Архив</a>
+        <a href="profile.html">Профиль</a>
+    </nav>
+</header>
+
+<!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+<div class="container">
+
+    <h1>Каталог студенческих проектов МГИК</h1>
+
+    <p>
+        Единая платформа для поиска команд, обмена идеями и совместной реализации
+        творческих инициатив студентов Московского государственного института культуры.
+    </p>
+
+    <!-- ===== ФИЛЬТРЫ ===== -->
+    <div class="filters">
+        <select id="directionFilter">
+            <option value="all">Все направления</option>
+            <option value="ФГКП">ФГКП</option>
+            <option value="ФМИ">ФМИ</option>
+            <option value="МАИС">МАИС</option>
+        </select>
+
+        <select id="skillFilter">
+            <option value="all">Все навыки</option>
+            <option value="звук">Звук</option>
+            <option value="видео">Видео</option>
+            <option value="дизайн">Дизайн</option>
+            <option value="организация">Организация</option>
+        </select>
+    </div>
+
+    <!-- ===== КАРТОЧКИ ПРОЕКТОВ ===== -->
+    <div class="cards">
+
+        <!-- Проект 1 -->
+        <a class="card" href="news/event1.html"
+           data-direction="ФГКП"
+           data-skills="организация,звук">
+            <img src="images/event1.jpg" alt="Концерт первокурсников">
+            <div class="card-content">
+                <h3 class="card-title">Концерт ко Дню первокурсника</h3>
+                <p class="card-text">
+                    Ищем участников для организации концертного мероприятия в актовом зале.
+                </p>
+                <p class="card-tags">ФГКП • Организация • Звук</p>
+            </div>
+        </a>
+
+        <!-- Проект 2 -->
+        <a class="card" href="news/event2.html"
+           data-direction="ФМИ"
+           data-skills="видео,дизайн">
+            <img src="images/event2.jpg" alt="Музыкальный клип">
+            <div class="card-content">
+                <h3 class="card-title">Съёмка музыкального клипа</h3>
+                <p class="card-text">
+                    Творческий проект: требуется видеограф, дизайнер и ассистенты.
+                </p>
+                <p class="card-tags">ФМИ • Видео • Дизайн</p>
+            </div>
+        </a>
+
+        <!-- Проект 3 -->
+        <a class="card" href="news/event3.html"
+           data-direction="МАИС"
+           data-skills="дизайн,организация">
+            <img src="images/event3.jpg" alt="Арт-фестиваль">
+            <div class="card-content">
+                <h3 class="card-title">Арт-фестиваль студенческих работ</h3>
+                <p class="card-text">
+                    Подготовка выставочного пространства, поиск кураторов и организаторов.
+                </p>
+                <p class="card-tags">МАИС • Дизайн • Организация</p>
+            </div>
+        </a>
+
+        <!-- Проект 4 -->
+        <a class="card" href="news/event4.html"
+           data-direction="ФГКП"
+           data-skills="звук,организация">
+            <img src="images/event4.jpg" alt="Музыкальный вечер">
+            <div class="card-content">
+                <h3 class="card-title">Музыкальный вечер в креативном пространстве</h3>
+                <p class="card-text">
+                    Набор команды для камерного концертного мероприятия.
+                </p>
+                <p class="card-tags">ФГКП • Звук • Организация</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<!-- ===== СКРИПТ ФИЛЬТРАЦИИ ===== -->
+<script src="js/filter.js"></script>
+
+</body>
+</html>
